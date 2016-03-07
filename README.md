@@ -19,7 +19,8 @@ $ docker run --rm -v /path/to/python/code:/code eeacms/pep8
 Exclude files or directories:
 
 ```console
-$ docker run --rm -v /path/to/python/code:/code eeacms/pep8 --exclude=skins /code
+$ docker run --rm -v /path/to/python/code:/code \ 
+         eeacms/pep8 --exclude=skins /code
 ```
 
 See pep8 `--help` for more options:
