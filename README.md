@@ -6,25 +6,23 @@
 ## Supported tags and respective `Dockerfile` links
 
 - [`latest` (*Dockerfile*)](https://github.com/eea/eea.docker.pep8/blob/master/Dockerfile)
-- [`1.7.0` (*Dockerfile*)](https://github.com/eea/eea.docker.pep8/blob/1.7.0/Dockerfile)
+- [`1.7.0.1` (*Dockerfile*)](https://github.com/eea/eea.docker.pep8/blob/1.7.0.1/Dockerfile)
 
 ## Usage
 
-```console
-$ docker run --rm -v /path/to/python/code:/code eeacms/pep8
-```
+    $ docker run --rm -v /path/to/python/code:/code eeacms/pep8
+
+or
+
+    $ docker run --rm eeacms/pep8 https://github.com/eea/eea.alchemy.git
 
 ## Advanced usage
 
 Exclude files or directories:
 
-```console
-$ docker run --rm -v /path/to/python/code:/code \ 
-         eeacms/pep8 --exclude=skins /code
-```
+    $ docker run --rm -e GIT_SRC="https://github.com/eea/eea.alchemy.git" eeacms/pep8 --exclude=Extensions,skins,tests,api /code
 
 See pep8 `--help` for more options:
 
-```console
-$ docker run --rm eeacms/pep8 --help
-```
+
+    $ docker run --rm eeacms/pep8 --help
