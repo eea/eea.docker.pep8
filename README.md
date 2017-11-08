@@ -6,6 +6,7 @@
 ## Supported tags and respective `Dockerfile` links
 
 - [`latest` (*Dockerfile*)](https://github.com/eea/eea.docker.pep8/blob/master/Dockerfile)
+- [`1.7.0.2` (*Dockerfile*)](https://github.com/eea/eea.docker.pep8/blob/1.7.0.2/Dockerfile)
 - [`1.7.0.1` (*Dockerfile*)](https://github.com/eea/eea.docker.pep8/blob/1.7.0.1/Dockerfile)
 
 ## Usage
